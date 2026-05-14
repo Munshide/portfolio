@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Portfolio home">
+        <img class="brand-logo" src="2023_10_23_07_31_IMG_4417.JPG" alt="Munshid E" />
+        <span>
+          <strong>Munshid E</strong>
+          <small>Software Developer</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Available for developer roles</p>
+          <h1>Building clean software with a creative edge.</h1>
+          <p>
+            I am a software developer focused on responsive web apps, reliable
+            backends, and interfaces that feel sharp, fast, and easy to use.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-lab" aria-label="Interactive developer visual">
+          <canvas id="heroCanvas" width="720" height="520"></canvas>
+          <div class="game-hud" aria-live="polite">
+            <strong id="gameTitle">Connect the stack</strong>
+            <span id="gameMessage">Click UI to start the deployment path.</span>
+          </div>
+          <div class="status-strip">
+            <span class="active">UI</span>
+            <span>API</span>
+            <span>DB</span>
+            <span>Deploy</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2>Developer profile</h2>
+        </div>
+        <div class="about-grid">
+          <article class="intro-panel">
+            <h3>What I do</h3>
+            <p>
+              I turn ideas into usable products with thoughtful frontend design,
+              maintainable code, and practical problem solving. I enjoy working
+              across the stack and learning quickly when a project needs it.
+            </p>
+            <p>
+              This portfolio is intentionally simple: recruiters can scan it
+              quickly, while the small interactions show care for user
+              experience.
+            </p>
+          </article>
+          <div class="metric-row" aria-label="Portfolio highlights">
+            <article>
+              <strong>12+</strong>
+              <span>Projects built</span>
+            </article>
+            <article>
+              <strong>5</strong>
+              <span>Core technologies</span>
+            </article>
+            <article>
+              <strong>100%</strong>
+              <span>Focused on growth</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2>My toolkit</h2>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Skill filters">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="frontend">Frontend</button>
+          <button class="filter-button" type="button" data-filter="backend">Backend</button>
+          <button class="filter-button" type="button" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="skill-grid">
+          <article class="skill-card" data-category="frontend">
+            <span>JS</span>
+            <h3>JavaScript</h3>
+            <p>DOM interactions, async logic, browser APIs, and app behavior.</p>
+          </article>
+          <article class="skill-card" data-category="frontend">
+            <span>RE</span>
+            <h3>React</h3>
+            <p>Components, hooks, routing, reusable UI, and state flows.</p>
+          </article>
+          <article class="skill-card" data-category="frontend">
+            <span>CSS</span>
+            <h3>Responsive UI</h3>
+            <p>Layouts, motion, accessibility, and clean visual systems.</p>
+          </article>
+          <article class="skill-card" data-category="backend">
+            <span>ND</span>
+            <h3>Node.js</h3>
+            <p>APIs, authentication, server logic, and third-party integrations.</p>
+          </article>
+          <article class="skill-card" data-category="backend">
+            <span>DB</span>
+            <h3>Databases</h3>
+            <p>Schema design, queries, relationships, and data modeling.</p>
+          </article>
+          <article class="skill-card" data-category="tools">
+            <span>GT</span>
+            <h3>Git & Deploy</h3>
+            <p>Version control, debugging, testing basics, and deployment flow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+
+        <div class="projects-layout">
+          <div class="project-list" aria-label="Project list">
+            <button class="project-card active" type="button" data-project="coffee">
+              <span class="project-number">01</span>
+              <strong>Coffee Website</strong>
+              <small>HTML, CSS, JavaScript, Bootstrap</small>
+            </button>
+            <button class="project-card" type="button" data-project="commerce">
+              <span class="project-number">02</span>
+              <strong>Store Admin Panel</strong>
+              <small>Orders, inventory, auth</small>
+            </button>
+            <button class="project-card" type="button" data-project="notes">
+              <span class="project-number">03</span>
+              <strong>Smart Notes App</strong>
+              <small>Search, tags, productivity</small>
+            </button>
+          </div>
+
+          <article class="project-preview" aria-live="polite">
+            <div class="preview-art" id="previewArt">
+              <img
+                id="projectImage"
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80"
+                alt="Coffee Website preview"
+              />
+            </div>
+            <p class="eyebrow" id="projectStack">HTML, CSS, JavaScript, Bootstrap</p>
+            <h3 id="projectTitle">Coffee Website</h3>
+            <p id="projectDescription">
+              A simple responsive website that shares information about coffee
+              and presents a clean small-project layout.
+            </p>
+            <a id="projectLink" href="https://coffeeweb256.netlify.app/" target="_blank" rel="noreferrer" aria-label="Open Coffee Website">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something useful.</h2>
+        </div>
+
+        <div class="contact-grid">
+          <article class="contact-panel">
+            <h3>Open to software developer roles</h3>
+            <p>
+              Reach out for software developer opportunities, project
+              collaboration, or portfolio details.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:munshidmd@gmail.com">munshidmd@gmail.com</a>
+              <a href="https://github.com/Munshide" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/munshid-e-897b6b263" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </article>
+
+          <form class="contact-form" id="contactForm">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Recruiter name" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="I would like to discuss a role..." required></textarea>
+            </label>
+            <button type="submit" id="sendMessage">Send</button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="#home" aria-label="Back to portfolio home">
+            <span class="brand-mark">SD</span>
+            <span>
+              <strong>Munshid E</strong>
+              <small>Software Developer</small>
+            </span>
+          </a>
+          <p>
+            Building responsive websites, practical web apps, and clean user
+            experiences with HTML, CSS, JavaScript, and modern tools.
+          </p>
+        </div>
+
+        <div class="footer-links" aria-label="Footer contact links">
+          <a href="mailto:munshidmd@gmail.com">munshidmd@gmail.com</a>
+          <a href="https://github.com/Munshide" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/munshid-e-897b6b263" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <p class="footer-note">© 2026 Munshid E. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
